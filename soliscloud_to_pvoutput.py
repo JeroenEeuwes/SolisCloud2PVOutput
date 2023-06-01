@@ -258,11 +258,11 @@ def do_work():
                     + str(solar_watt)
                     + ",-1"  # Power Generation
                     + ","  # no Energy Consumption
-                    + str(ac_volt)
+                    # JEE: geen power generation opsturen + str(ac_volt)
                     + ","  # Power generation used for AC voltage
-                    + str(inverter_temp)
+                    # JEE: geen inerter temp opsturen + str(inverter_temp)
                     + ","  # inverter temp iso outside temp
-                    + str(volt)  # Voltage
+                    + str(ac_volt)  # Voltage JEE: AC voltage opsturen, niet DC
                 )
                 send_pvoutput_data(pvoutput_string)
 
